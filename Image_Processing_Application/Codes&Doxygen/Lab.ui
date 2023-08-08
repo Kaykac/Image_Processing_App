@@ -1,0 +1,790 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>758</width>
+    <height>892</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Image Processing Application</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>Icons/icons8-edit-image-100.png</normaloff>Icons/icons8-edit-image-100.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_20">
+    <item row="0" column="1">
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="1" column="1">
+     <layout class="QFormLayout" name="formLayout">
+      <item row="0" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <item>
+           <widget class="QGroupBox" name="groupBox">
+            <property name="title">
+             <string>Source</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout">
+             <item row="0" column="0">
+              <layout class="QVBoxLayout" name="verticalLayout">
+               <item>
+                <widget class="QToolButton" name="toolButton_S1">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>Icons/icons8-opened-folder-24.png</normaloff>Icons/icons8-opened-folder-24.png</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QToolButton" name="toolButton_S3">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>Icons/icons8-broom-24.png</normaloff>Icons/icons8-broom-24.png</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QToolButton" name="toolButton_S2">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>Icons/icons8-export-24.png</normaloff>Icons/icons8-export-24.png</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QGroupBox" name="groupBox_2">
+            <property name="title">
+             <string>Output</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_2">
+             <item row="0" column="0">
+              <layout class="QVBoxLayout" name="verticalLayout_2">
+               <item>
+                <widget class="QToolButton" name="toolButton_O1">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>Icons/icons8-save-24.png</normaloff>Icons/icons8-save-24.png</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QToolButton" name="toolButton_O2">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>Icons/icons8-save-as-24.png</normaloff>Icons/icons8-save-as-24.png</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QToolButton" name="toolButton_O3">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>Icons/icons8-export-24.png</normaloff>Icons/icons8-export-24.png</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QToolButton" name="toolButton_O4">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>Icons/icons8-broom-24.png</normaloff>Icons/icons8-broom-24.png</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QToolButton" name="toolButton_O6">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>Icons/icons8-redo-24.png</normaloff>Icons/icons8-redo-24.png</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QToolButton" name="toolButton_O5">
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>Icons/icons8-undo-24.png</normaloff>Icons/icons8-undo-24.png</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_7">
+            <item>
+             <widget class="QGroupBox" name="groupBox_4">
+              <property name="title">
+               <string>Conversion</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_4">
+               <item row="0" column="0">
+                <layout class="QVBoxLayout" name="verticalLayout_3">
+                 <item>
+                  <widget class="QToolButton" name="toolButton_C1">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset>
+                     <normaloff>Icons/icons8-color-mode-24.png</normaloff>Icons/icons8-color-mode-24.png</iconset>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QToolButton" name="toolButton_C2">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset>
+                     <normaloff>Icons/icons8-color-mode-100.png</normaloff>Icons/icons8-color-mode-100.png</iconset>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="groupBox_5">
+              <property name="title">
+               <string>Segmentation</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_5">
+               <item row="0" column="0">
+                <layout class="QVBoxLayout" name="verticalLayout_4">
+                 <item>
+                  <widget class="QToolButton" name="toolButton_Seg1">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset>
+                     <normaloff>Icons/icons8-image-48.png</normaloff>Icons/icons8-image-48.png</iconset>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QToolButton" name="toolButton_Seg2">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset>
+                     <normaloff>Icons/icons8-image-50.png</normaloff>Icons/icons8-image-50.png</iconset>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QToolButton" name="toolButton_Seg3">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset>
+                     <normaloff>Icons/icons8-image-64.png</normaloff>Icons/icons8-image-64.png</iconset>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="groupBox_3">
+              <property name="title">
+               <string>Edge Detection</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_3">
+               <item row="0" column="0">
+                <layout class="QVBoxLayout" name="verticalLayout_5">
+                 <item>
+                  <widget class="QToolButton" name="toolButton_E1">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset>
+                     <normaloff>Icons/icons8-r-24.png</normaloff>Icons/icons8-r-24.png</iconset>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QToolButton" name="toolButton_E2">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset>
+                     <normaloff>Icons/icons8-s-24.png</normaloff>Icons/icons8-s-24.png</iconset>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QToolButton" name="toolButton_E3">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset>
+                     <normaloff>Icons/icons8-scratch-24.png</normaloff>Icons/icons8-scratch-24.png</iconset>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QToolButton" name="toolButton_E4">
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset>
+                     <normaloff>Icons/icons8-paragraph-24.png</normaloff>Icons/icons8-paragraph-24.png</iconset>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="1">
+       <layout class="QVBoxLayout" name="verticalLayout_22">
+        <item>
+         <widget class="QGroupBox" name="groupBox_12">
+          <property name="minimumSize">
+           <size>
+            <width>600</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>600</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>Source</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_19">
+           <property name="sizeConstraint">
+            <enum>QLayout::SetDefaultConstraint</enum>
+           </property>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_Source">
+             <property name="text">
+              <string/>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_6">
+          <property name="minimumSize">
+           <size>
+            <width>600</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>600</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>Output</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_6">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_Output">
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="2">
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Expanding</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="1" column="0">
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="2" column="1">
+     <spacer name="verticalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>758</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_File">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <widget class="QMenu" name="menu_Export_As">
+     <property name="title">
+      <string>&amp;Export As</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>Icons/icons8-export-24.png</normaloff>Icons/icons8-export-24.png</iconset>
+     </property>
+     <addaction name="action_Source"/>
+     <addaction name="action_Output"/>
+    </widget>
+    <addaction name="action_Open_Source"/>
+    <addaction name="action_Save_Output"/>
+    <addaction name="action_save_As_Output"/>
+    <addaction name="menu_Export_As"/>
+    <addaction name="action_Exit"/>
+   </widget>
+   <widget class="QMenu" name="menu_Edit">
+    <property name="title">
+     <string>&amp;Edit</string>
+    </property>
+    <widget class="QMenu" name="menu_Clear">
+     <property name="title">
+      <string>&amp;Clear</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>Icons/icons8-broom-24.png</normaloff>Icons/icons8-broom-24.png</iconset>
+     </property>
+     <addaction name="action_Source_2"/>
+     <addaction name="actionO_Output"/>
+    </widget>
+    <addaction name="menu_Clear"/>
+    <addaction name="action_Undo_Output"/>
+    <addaction name="action_Redo_Output"/>
+   </widget>
+   <widget class="QMenu" name="menu_Conversion">
+    <property name="title">
+     <string>&amp;Conversion</string>
+    </property>
+    <addaction name="action_RGB_to_Grayscale"/>
+    <addaction name="action_RGB_to_HSV"/>
+   </widget>
+   <widget class="QMenu" name="menu_Segmentation">
+    <property name="title">
+     <string>&amp;Segmentation</string>
+    </property>
+    <addaction name="action_Multi_Otsu_Thresholding"/>
+    <addaction name="action_Chan_Vese_Segmentation"/>
+    <addaction name="action_Morphological_Snakes"/>
+   </widget>
+   <widget class="QMenu" name="menu_Edge_Detection">
+    <property name="title">
+     <string>&amp;Edge Detection</string>
+    </property>
+    <addaction name="action_Roberts"/>
+    <addaction name="action_Sobel"/>
+    <addaction name="action_Scharr"/>
+    <addaction name="action_Prewitt"/>
+   </widget>
+   <addaction name="menu_File"/>
+   <addaction name="menu_Edit"/>
+   <addaction name="menu_Conversion"/>
+   <addaction name="menu_Segmentation"/>
+   <addaction name="menu_Edge_Detection"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_Open_Source">
+   <property name="text">
+    <string>&amp;Open Source</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="action_Save_Output">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>Icons/icons8-save-24.png</normaloff>Icons/icons8-save-24.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Save Output</string>
+   </property>
+  </action>
+  <action name="action_save_As_Output">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>Icons/icons8-save-as-24.png</normaloff>Icons/icons8-save-as-24.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Save As Output</string>
+   </property>
+  </action>
+  <action name="action_Exit">
+   <property name="text">
+    <string>&amp;Exit</string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+F4</string>
+   </property>
+  </action>
+  <action name="action_Source">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>Icons/icons8-input-24.png</normaloff>Icons/icons8-input-24.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Source</string>
+   </property>
+  </action>
+  <action name="action_Output">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>Icons/icons8-output-24.png</normaloff>Icons/icons8-output-24.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Output</string>
+   </property>
+  </action>
+  <action name="action_Undo_Output">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>Icons/icons8-undo-24.png</normaloff>Icons/icons8-undo-24.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Undo Output</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+Z</string>
+   </property>
+  </action>
+  <action name="action_Redo_Output">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>Icons/icons8-redo-24.png</normaloff>Icons/icons8-redo-24.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Redo Output</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
+   </property>
+  </action>
+  <action name="action_Source_2">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>Icons/icons8-input-24.png</normaloff>Icons/icons8-input-24.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Source</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
+  </action>
+  <action name="actionO_Output">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>Icons/icons8-output-24.png</normaloff>Icons/icons8-output-24.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Output</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+L</string>
+   </property>
+  </action>
+  <action name="action_RGB_to_Grayscale">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>Icons/icons8-color-mode-24.png</normaloff>Icons/icons8-color-mode-24.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;RGB to Grayscale</string>
+   </property>
+  </action>
+  <action name="action_RGB_to_HSV">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>Icons/icons8-color-mode-100.png</normaloff>Icons/icons8-color-mode-100.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;RGB to HSV</string>
+   </property>
+  </action>
+  <action name="action_Multi_Otsu_Thresholding">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>Icons/icons8-image-48.png</normaloff>Icons/icons8-image-48.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Multi-Otsu Thresholding</string>
+   </property>
+  </action>
+  <action name="action_Chan_Vese_Segmentation">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>Icons/icons8-image-50.png</normaloff>Icons/icons8-image-50.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Chan-Vese Segmentation</string>
+   </property>
+  </action>
+  <action name="action_Morphological_Snakes">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>Icons/icons8-image-64.png</normaloff>Icons/icons8-image-64.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Morphological Snakes</string>
+   </property>
+  </action>
+  <action name="action_Roberts">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>Icons/icons8-r-24.png</normaloff>Icons/icons8-r-24.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Roberts</string>
+   </property>
+  </action>
+  <action name="action_Sobel">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>Icons/icons8-s-24.png</normaloff>Icons/icons8-s-24.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Sobel</string>
+   </property>
+  </action>
+  <action name="action_Scharr">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>Icons/icons8-scratch-24.png</normaloff>Icons/icons8-scratch-24.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Scharr</string>
+   </property>
+  </action>
+  <action name="action_Prewitt">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>Icons/icons8-paragraph-24.png</normaloff>Icons/icons8-paragraph-24.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Prewitt</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
