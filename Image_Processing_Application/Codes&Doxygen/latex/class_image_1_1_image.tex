@@ -1,0 +1,263 @@
+\hypertarget{class_image_1_1_image}{}\doxysection{Image.\+Image Class Reference}
+\label{class_image_1_1_image}\index{Image.Image@{Image.Image}}
+Inheritance diagram for Image.\+Image\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_image_1_1_image}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_image_1_1_image_aa0d1493c861a51bb0893241c1175a017}\label{class_image_1_1_image_aa0d1493c861a51bb0893241c1175a017}} 
+def {\bfseries \+\_\+\+\_\+init\+\_\+\+\_\+} (self, Main\+Window)
+\item 
+def \mbox{\hyperlink{class_image_1_1_image_a00463997dff704be7a05d9aeba8dcb80}{open\+File}} (self)
+\begin{DoxyCompactList}\small\item\em Performs the file decompression and loads the image. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_image_1_1_image_a36ec8fb890e6d9eabbd1305ac675391b}{Clear\+Out}} (self)
+\begin{DoxyCompactList}\small\item\em Cleans the output and loads the startup image. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_image_1_1_image_a4f037e05eb8300b1a937a2036c86a90d}{export\+As}} (self)
+\begin{DoxyCompactList}\small\item\em Exports the image in the specified format. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_image_1_1_image_ad004485dc87e96402d3c1bed7f626ce0}{export\+As\+\_\+\+Out}} (self)
+\begin{DoxyCompactList}\small\item\em Exports the output in the specified format. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_image_1_1_image_ac9c1d8978544a9773f56756c2db27e5d}{save\+Output}} (self)
+\begin{DoxyCompactList}\small\item\em Saves the output to the \textquotesingle{}Output.\+png\textquotesingle{} file. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_image_1_1_image_a901ce5a007d0a356d0cd4b215a485096}{save\+As\+Output}} (self)
+\begin{DoxyCompactList}\small\item\em Saves the output in the specified name and format. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_image_1_1_image_ac4dc73b52530a82c22b51d0bb523f2bf}{RGBto\+Gray\+Scale}} (self)
+\begin{DoxyCompactList}\small\item\em Makes the output image grayscale. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_image_1_1_image_a1c7c30f1b6f9af9c6d67514951d2c2e5}{RGBto\+HSV}} (self)
+\begin{DoxyCompactList}\small\item\em Converts the output image to HSV color space. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_image_1_1_image_aa554050e693c1ad6badeb8ed3eb73d7d}{clear\+Source}} (self)
+\begin{DoxyCompactList}\small\item\em Cleans the source and output images. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_image_1_1_image_aa0f14892cc1c6f6a43bb30e4d4753fe9}{Multi\+Otsu}} (self)
+\begin{DoxyCompactList}\small\item\em Applies the multiple Otsu thresholding method on the output image. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_image_1_1_image_a017b694694adf22fb3f7c68fe785b3be}{Chan\+Vese\+\_\+\+Seg}} (self)
+\begin{DoxyCompactList}\small\item\em Implements the Chan-\/\+Vese segmentation method. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_image_1_1_image_a8109f60b646e1ecf25bf2259e4952f68}{Morphological\+\_\+\+Snakes}} (self)
+\begin{DoxyCompactList}\small\item\em Implements the morphological snakes algorithm. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_image_1_1_image_a98c57468db4560e1e70143d78977fcc7}{Roberts}} (self)
+\begin{DoxyCompactList}\small\item\em Roberts implements the edge detection method. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_image_1_1_image_a55f9203e7b46cdcfa3448b9616f4c775}{Sobel}} (self)
+\begin{DoxyCompactList}\small\item\em Implements the Sobel edge detection method. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_image_1_1_image_a4b476130d5bea2ab8404410110d91bf9}{Scharr}} (self)
+\begin{DoxyCompactList}\small\item\em Implements the Scharr edge detection method. \end{DoxyCompactList}\item 
+def \mbox{\hyperlink{class_image_1_1_image_aafdf919285da51e95d9e03bc63b3c314}{Prewitt}} (self)
+\begin{DoxyCompactList}\small\item\em Implements the Prewitt edge detection method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_image_1_1_image_a017b694694adf22fb3f7c68fe785b3be}\label{class_image_1_1_image_a017b694694adf22fb3f7c68fe785b3be}} 
+\index{Image.Image@{Image.Image}!ChanVese\_Seg@{ChanVese\_Seg}}
+\index{ChanVese\_Seg@{ChanVese\_Seg}!Image.Image@{Image.Image}}
+\doxysubsubsection{\texorpdfstring{ChanVese\_Seg()}{ChanVese\_Seg()}}
+{\footnotesize\ttfamily def Image.\+Image.\+Chan\+Vese\+\_\+\+Seg (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Implements the Chan-\/\+Vese segmentation method. 
+
+Implements the Chan-\/\+Vese segmentation method, saves it to the \textquotesingle{}Output.\+png\textquotesingle{} file and displays the image. \begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_image_1_1_image_a36ec8fb890e6d9eabbd1305ac675391b}\label{class_image_1_1_image_a36ec8fb890e6d9eabbd1305ac675391b}} 
+\index{Image.Image@{Image.Image}!ClearOut@{ClearOut}}
+\index{ClearOut@{ClearOut}!Image.Image@{Image.Image}}
+\doxysubsubsection{\texorpdfstring{ClearOut()}{ClearOut()}}
+{\footnotesize\ttfamily def Image.\+Image.\+Clear\+Out (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Cleans the output and loads the startup image. 
+
+Cleans the output and reloads the startup image to its original state. \begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_image_1_1_image_aa554050e693c1ad6badeb8ed3eb73d7d}\label{class_image_1_1_image_aa554050e693c1ad6badeb8ed3eb73d7d}} 
+\index{Image.Image@{Image.Image}!clearSource@{clearSource}}
+\index{clearSource@{clearSource}!Image.Image@{Image.Image}}
+\doxysubsubsection{\texorpdfstring{clearSource()}{clearSource()}}
+{\footnotesize\ttfamily def Image.\+Image.\+clear\+Source (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Cleans the source and output images. 
+
+Clears source and output images, disables button and menu functions. \begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_image_1_1_image_a4f037e05eb8300b1a937a2036c86a90d}\label{class_image_1_1_image_a4f037e05eb8300b1a937a2036c86a90d}} 
+\index{Image.Image@{Image.Image}!exportAs@{exportAs}}
+\index{exportAs@{exportAs}!Image.Image@{Image.Image}}
+\doxysubsubsection{\texorpdfstring{exportAs()}{exportAs()}}
+{\footnotesize\ttfamily def Image.\+Image.\+export\+As (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Exports the image in the specified format. 
+
+Exports the image in the specified format and gives the user a way to save it. \begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_image_1_1_image_ad004485dc87e96402d3c1bed7f626ce0}\label{class_image_1_1_image_ad004485dc87e96402d3c1bed7f626ce0}} 
+\index{Image.Image@{Image.Image}!exportAs\_Out@{exportAs\_Out}}
+\index{exportAs\_Out@{exportAs\_Out}!Image.Image@{Image.Image}}
+\doxysubsubsection{\texorpdfstring{exportAs\_Out()}{exportAs\_Out()}}
+{\footnotesize\ttfamily def Image.\+Image.\+export\+As\+\_\+\+Out (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Exports the output in the specified format. 
+
+Exports the output in the specified format and gives the user a way to save it. \begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_image_1_1_image_a8109f60b646e1ecf25bf2259e4952f68}\label{class_image_1_1_image_a8109f60b646e1ecf25bf2259e4952f68}} 
+\index{Image.Image@{Image.Image}!Morphological\_Snakes@{Morphological\_Snakes}}
+\index{Morphological\_Snakes@{Morphological\_Snakes}!Image.Image@{Image.Image}}
+\doxysubsubsection{\texorpdfstring{Morphological\_Snakes()}{Morphological\_Snakes()}}
+{\footnotesize\ttfamily def Image.\+Image.\+Morphological\+\_\+\+Snakes (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Implements the morphological snakes algorithm. 
+
+Applies the morphological snakes algorithm, saves it to the \textquotesingle{}Output.\+png\textquotesingle{} file and displays the image. \begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_image_1_1_image_aa0f14892cc1c6f6a43bb30e4d4753fe9}\label{class_image_1_1_image_aa0f14892cc1c6f6a43bb30e4d4753fe9}} 
+\index{Image.Image@{Image.Image}!MultiOtsu@{MultiOtsu}}
+\index{MultiOtsu@{MultiOtsu}!Image.Image@{Image.Image}}
+\doxysubsubsection{\texorpdfstring{MultiOtsu()}{MultiOtsu()}}
+{\footnotesize\ttfamily def Image.\+Image.\+Multi\+Otsu (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Applies the multiple Otsu thresholding method on the output image. 
+
+Applies multiple Otsu thresholding method on output image and saves to \textquotesingle{}Output.\+png\textquotesingle{} file. \begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_image_1_1_image_a00463997dff704be7a05d9aeba8dcb80}\label{class_image_1_1_image_a00463997dff704be7a05d9aeba8dcb80}} 
+\index{Image.Image@{Image.Image}!openFile@{openFile}}
+\index{openFile@{openFile}!Image.Image@{Image.Image}}
+\doxysubsubsection{\texorpdfstring{openFile()}{openFile()}}
+{\footnotesize\ttfamily def Image.\+Image.\+open\+File (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Performs the file decompression and loads the image. 
+
+Allows the user to select a file and loads the selected image. \begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_image_1_1_image_aafdf919285da51e95d9e03bc63b3c314}\label{class_image_1_1_image_aafdf919285da51e95d9e03bc63b3c314}} 
+\index{Image.Image@{Image.Image}!Prewitt@{Prewitt}}
+\index{Prewitt@{Prewitt}!Image.Image@{Image.Image}}
+\doxysubsubsection{\texorpdfstring{Prewitt()}{Prewitt()}}
+{\footnotesize\ttfamily def Image.\+Image.\+Prewitt (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Implements the Prewitt edge detection method. 
+
+Prewitt implements edge detection method, saves to \textquotesingle{}Output.\+png\textquotesingle{} file and displays the image. \begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_image_1_1_image_ac4dc73b52530a82c22b51d0bb523f2bf}\label{class_image_1_1_image_ac4dc73b52530a82c22b51d0bb523f2bf}} 
+\index{Image.Image@{Image.Image}!RGBtoGrayScale@{RGBtoGrayScale}}
+\index{RGBtoGrayScale@{RGBtoGrayScale}!Image.Image@{Image.Image}}
+\doxysubsubsection{\texorpdfstring{RGBtoGrayScale()}{RGBtoGrayScale()}}
+{\footnotesize\ttfamily def Image.\+Image.\+RGBto\+Gray\+Scale (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Makes the output image grayscale. 
+
+Makes the output image grayscale and saves it to the \textquotesingle{}Output.\+png\textquotesingle{} file. \begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_image_1_1_image_a1c7c30f1b6f9af9c6d67514951d2c2e5}\label{class_image_1_1_image_a1c7c30f1b6f9af9c6d67514951d2c2e5}} 
+\index{Image.Image@{Image.Image}!RGBtoHSV@{RGBtoHSV}}
+\index{RGBtoHSV@{RGBtoHSV}!Image.Image@{Image.Image}}
+\doxysubsubsection{\texorpdfstring{RGBtoHSV()}{RGBtoHSV()}}
+{\footnotesize\ttfamily def Image.\+Image.\+RGBto\+HSV (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Converts the output image to HSV color space. 
+
+Converts the output image to HSV color space and saves it to the \textquotesingle{}Output.\+png\textquotesingle{} file. \begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_image_1_1_image_a98c57468db4560e1e70143d78977fcc7}\label{class_image_1_1_image_a98c57468db4560e1e70143d78977fcc7}} 
+\index{Image.Image@{Image.Image}!Roberts@{Roberts}}
+\index{Roberts@{Roberts}!Image.Image@{Image.Image}}
+\doxysubsubsection{\texorpdfstring{Roberts()}{Roberts()}}
+{\footnotesize\ttfamily def Image.\+Image.\+Roberts (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Roberts implements the edge detection method. 
+
+Roberts implements the edge detection method, saves it to the \textquotesingle{}Output.\+png\textquotesingle{} file and displays the image. \begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_image_1_1_image_a901ce5a007d0a356d0cd4b215a485096}\label{class_image_1_1_image_a901ce5a007d0a356d0cd4b215a485096}} 
+\index{Image.Image@{Image.Image}!saveAsOutput@{saveAsOutput}}
+\index{saveAsOutput@{saveAsOutput}!Image.Image@{Image.Image}}
+\doxysubsubsection{\texorpdfstring{saveAsOutput()}{saveAsOutput()}}
+{\footnotesize\ttfamily def Image.\+Image.\+save\+As\+Output (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Saves the output in the specified name and format. 
+
+Saves the output in the specified name and format. \begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_image_1_1_image_ac9c1d8978544a9773f56756c2db27e5d}\label{class_image_1_1_image_ac9c1d8978544a9773f56756c2db27e5d}} 
+\index{Image.Image@{Image.Image}!saveOutput@{saveOutput}}
+\index{saveOutput@{saveOutput}!Image.Image@{Image.Image}}
+\doxysubsubsection{\texorpdfstring{saveOutput()}{saveOutput()}}
+{\footnotesize\ttfamily def Image.\+Image.\+save\+Output (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Saves the output to the \textquotesingle{}Output.\+png\textquotesingle{} file. 
+
+Saves the output to the \textquotesingle{}Output.\+png\textquotesingle{} file. \begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_image_1_1_image_a4b476130d5bea2ab8404410110d91bf9}\label{class_image_1_1_image_a4b476130d5bea2ab8404410110d91bf9}} 
+\index{Image.Image@{Image.Image}!Scharr@{Scharr}}
+\index{Scharr@{Scharr}!Image.Image@{Image.Image}}
+\doxysubsubsection{\texorpdfstring{Scharr()}{Scharr()}}
+{\footnotesize\ttfamily def Image.\+Image.\+Scharr (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Implements the Scharr edge detection method. 
+
+Scharr implements edge detection method, saves to \textquotesingle{}Output.\+png\textquotesingle{} file and displays the image. \begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_image_1_1_image_a55f9203e7b46cdcfa3448b9616f4c775}\label{class_image_1_1_image_a55f9203e7b46cdcfa3448b9616f4c775}} 
+\index{Image.Image@{Image.Image}!Sobel@{Sobel}}
+\index{Sobel@{Sobel}!Image.Image@{Image.Image}}
+\doxysubsubsection{\texorpdfstring{Sobel()}{Sobel()}}
+{\footnotesize\ttfamily def Image.\+Image.\+Sobel (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+
+
+Implements the Sobel edge detection method. 
+
+Sobel implements edge detection method, saves to \textquotesingle{}Output.\+png\textquotesingle{} file and displays the image. \begin{DoxyReturn}{Returns}
+None 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Image.\+py\end{DoxyCompactItemize}
